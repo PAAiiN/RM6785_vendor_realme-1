@@ -570,7 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init_connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_connectivity.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
@@ -1736,7 +1735,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.engineermode@1.2 \
     vendor.mediatek.hardware.engineermode@1.3 \
     vendor.mediatek.hardware.lbs@1.0 \
-    vendor.mediatek.hardware.log@1.0 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.pplagent@1.0 \
@@ -1864,7 +1862,6 @@ PRODUCT_PACKAGES += \
     libccu_sala_wide_ov8856.ddr \
     libccu_salaa_qtech_main_s5kgm1sp.ddr \
     libccu_sarter_qtech_main_s5kgm1sp.ddr \
-    loghidlvendorservice \
     mcDriverDaemon \
     md_monitor \
     md_monitor_ctrl \

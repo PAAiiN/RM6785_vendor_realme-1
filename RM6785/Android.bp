@@ -17033,23 +17033,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.mediatek.hardware.log@1.0",
-	owner: "realme",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.mediatek.hardware.log@1.0.so"],
-		},
-	},
-	compile_multilib: "64",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.mediatek.hardware.mdmonitor@1.0",
 	owner: "realme",
 	strip: {
@@ -18711,18 +18694,6 @@ cc_prebuilt_binary {
 	name: "libccu_sarter_qtech_main_s5kgm1sp.ddr",
 	owner: "realme",
 	srcs: ["proprietary/vendor/bin/libccu_sarter_qtech_main_s5kgm1sp.ddr"],
-	check_elf_files: false,
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "loghidlvendorservice",
-	owner: "realme",
-	srcs: ["proprietary/vendor/bin/loghidlvendorservice"],
 	check_elf_files: false,
 	strip: {
 		none: true,
