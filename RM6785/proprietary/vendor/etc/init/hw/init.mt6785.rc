@@ -48,6 +48,11 @@ on init
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
 
+#ifdef ODM_HQ_EDIT
+#zhangchao@ODM.HQ.Charger,2020/01/01, add for charger update fastchg firmware
+    chown system system /proc/fastchg_fw_update
+#endif
+
 on late-init
     write /proc/bootprof "INIT:late-init"
 # enable rcu_expedited
