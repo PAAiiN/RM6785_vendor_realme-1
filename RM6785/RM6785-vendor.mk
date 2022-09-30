@@ -12,6 +12,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/lib/soundfx/libdirac.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdirac.so
 
 PRODUCT_COPY_FILES += \
+    vendor/realme/RM6785/proprietary/lib/libperfctl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libperfctl.so \
+    vendor/realme/RM6785/proprietary/lib/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpowerhalwrap.so \
+    vendor/realme/RM6785/proprietary/lib/libpowerhalwrap_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libpowerhalwrap_jni.so \
+    vendor/realme/RM6785/proprietary/lib64/libperfctl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libperfctl.so \
+    vendor/realme/RM6785/proprietary/lib64/libpowerhalwrap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpowerhalwrap.so \
+    vendor/realme/RM6785/proprietary/lib64/libpowerhalwrap_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libpowerhalwrap_jni.so
+
+PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
     vendor/realme/RM6785/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_device/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/audio_device.xml \
