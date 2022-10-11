@@ -1013,6 +1013,7 @@ PRODUCT_PACKAGES += \
     libspeechparser_vendor \
     libstagefrighthw \
     libstorage_otp \
+    libthermalalgo \
     libthha \
     libtlcWidevineModularDrm \
     libvc1dec_sa.ca7 \
