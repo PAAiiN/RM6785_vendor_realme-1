@@ -13,7 +13,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
-    vendor/realme/RM6785/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/realme/RM6785/proprietary/product/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_device/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/audio_device.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_device/common/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/common/audio_device.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_param/AudioParamOptions.xml \
@@ -539,13 +539,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.connectivity.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.modem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.modem.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.mt6785.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6785.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.mt6785.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mt6785.usb.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.project.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/hw/init.sensor_1_0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.sensor_1_0.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
@@ -567,7 +560,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.xcap.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.xcap.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/init_connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_connectivity.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
@@ -592,7 +584,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -821,24 +812,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/firmware/gt1151_default_firmware2.img:$(TARGET_COPY_OUT_VENDOR)/firmware/gt1151_default_firmware2.img \
     vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6785v96.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6785v96.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6785v99.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6785v99.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6853v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6853v01.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6873v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6873v01.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6885v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6885v01.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6885v1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6885v1.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6885v9c.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6885v9c.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_6893v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_6893v01.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_90hz6885.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_90hz6885.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_cfg_gt9885v1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_cfg_gt9885v1.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6785a4.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6785a4.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6785ae.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6785ae.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6853v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6853v01.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6873v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6873v01.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6885a1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6885a1.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6885af.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6885af.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6885b0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6885b0.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6885b1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6885b1.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6885v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6885v01.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/gt9886_firmware_6893v01.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gt9886_firmware_6893v01.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/mt6631_fm_v1_coeff.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_coeff.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/mt6631_fm_v1_patch.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mt6631_fm_v1_patch.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc1_0_patch_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_patch_mcu_2a_1_hdr.bin \
@@ -850,26 +825,20 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_mcu_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_1_1_hdr.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_1a_1_hdr.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_e1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/FW_NT36672C_NF_JDI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/FW_NT36672C_NF_JDI.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/FW_NT36672C_NF_JDI_FAE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/FW_NT36672C_NF_JDI_FAE.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/FW_NT36672C_NF_JDI_TEST.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/FW_NT36672C_NF_JDI_TEST.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/FW_NT36672C_NF_TIANMA.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/FW_NT36672C_NF_TIANMA.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/FW_NT36672C_NF_TIANMA_FAE.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/FW_NT36672C_NF_TIANMA_FAE.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img \
-    vendor/realme/RM6785/proprietary/vendor/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img:$(TARGET_COPY_OUT_VENDOR)/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img \
     vendor/realme/RM6785/proprietary/vendor/firmware/wifi_19661.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi_19661.cfg \
     vendor/realme/RM6785/proprietary/vendor/firmware/wifi_20682.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi_20682.cfg \
-    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
-    vendor/realme/RM6785/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
-    vendor/realme/RM6785/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so
+    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
     libem_support_jni \
     libmtk_vt_wrapper \
     libmtkavenhancements \
+    libmtkperf_client \
     libvcodec_cap \
     libvcodec_capenc \
+    libvsim-adaptor-client \
+    libaptXHD_encoder \
+    libaptX_encoder \
     libcomutils \
     libimsma \
     libimsma_adapt \
@@ -880,14 +849,197 @@ PRODUCT_PACKAGES += \
     libsink \
     libsource \
     libvt_avsync \
-    libaptXHD_encoder \
-    libaptX_encoder \
-    AVCSecureVdecCA \
-    VP9SecureVdecCA \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
     libGLES_meow \
     libMEOW_trace \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
+    gps.default \
+    power.default \
+    power.mt6785 \
+    vendor.mediatek.hardware.keyinstall@1.0-impl \
+    vendor.mediatek.hardware.mms@1.5-impl \
+    vendor.mediatek.hardware.mtkpower@1.1-impl \
+    vendor.mediatek.hardware.mtkpower@1.2-impl \
+    vendor.mediatek.hardware.nvram@1.1-impl \
+    vendor.mediatek.hardware.pq@2.6-impl \
+    vendor.mediatek.hardware.videotelephony@1.0-impl \
+    libOpenCL \
+    libaedv \
+    libbwc \
+    libcapctrl \
+    libcares_naptr \
+    libcarrierconfig \
+    libccci_util \
+    libcharon-ss \
+    libcrypto-md \
+    libcrypto-ss \
+    libcurl-md \
+    libcurl-ss \
+    libcustom_nvram \
+    libdpframework \
+    libfile_op \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
+    libhdrvideo \
+    libhwm \
+    libhydra \
+    libion_mtk \
+    libion_ulit \
+    libipsec_ims_shr \
+    libladder \
+    libmtk_drvb \
+    libmtkares \
+    libmtkcutils \
+    libmtkhardware_legacy \
+    libmtknetutils \
+    libmtkperf_client_vendor \
+    libmtkproperty \
+    libmtkrillog \
+    libmtksysutils \
+    libnvram \
+    libnvram_daemon_callback \
+    libnvram_platform \
+    libnvram_sec \
+    libperfctl_vendor \
+    libpixelflinger \
+    libpower_timer \
+    libpowerhal \
+    libpowerhalwrap_vendor \
+    libpq_cust_base \
+    libpq_prot \
+    librgbwlightsensor \
+    libscltm \
+    libsimaka \
+    libssl-md \
+    libssl-ss \
+    libstrongswan \
+    libsysenv \
+    liburee_meta_drmkeyinstall \
+    libverno \
+    libvpu \
+    libwo \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
+    vendor.mediatek.hardware.gpu@1.0 \
+    vendor.mediatek.hardware.keyinstall@1.0 \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mms@1.4 \
+    vendor.mediatek.hardware.mms@1.5 \
+    vendor.mediatek.hardware.mtkpower@1.0 \
+    vendor.mediatek.hardware.mtkpower@1.1 \
+    vendor.mediatek.hardware.mtkpower@1.2 \
+    vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.nvram@1.0 \
+    vendor.mediatek.hardware.nvram@1.1 \
+    vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@2.0 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
+    vendor.mediatek.hardware.videotelephony@1.0 \
+    AVCSecureVdecCA \
+    VP9SecureVdecCA \
+    audio.primary.mt6785 \
+    audio.r_submix.mt6785 \
+    audio.usb.mt6785 \
+    sound_trigger.primary.mt6785 \
+    vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
+    libDR \
+    libHEVCdec_sa.ca7.android \
+    libMtkOmxAdpcmDec \
+    libMtkOmxAlacDec \
+    libMtkOmxApeDec \
+    libMtkOmxCore \
+    libMtkOmxGsmDec \
+    libMtkOmxMp3Dec \
+    libMtkOmxVdecEx \
+    libMtkOmxVenc \
+    libMtkOmxWmaDec \
+    libMtkSpeechEnh \
+    lib_iir \
+    lib_speech_enh \
+    libaudio_engineer_test \
+    libaudio_param_parser-vnd \
+    libaudiocompensationfilter_vendor \
+    libaudiocompensationfilterc \
+    libaudiocomponentengine_vendor \
+    libaudiocomponentenginec \
+    libaudiocustparam_vendor \
+    libaudiodcrflt_vendor \
+    libaudiofmtconv \
+    libaudioloudc \
+    libaudioprimarydevicehalifclient \
+    libaudiotoolkit_vendor \
+    libaurisysdemo \
+    libbessound_hd_mtk_vendor \
+    libblisrc32_vendor \
+    libcvsd_mtk \
+    libfgauge_gm30 \
+    libh264dec_customize \
+    libh264dec_sa.ca7 \
+    libh264dec_sd.ca7 \
+    libh264dec_se.ca7 \
+    libh264enc_sa.ca7 \
+    libhevce_sb.ca7.android \
+    libktvdrc \
+    libktveffect \
+    libktveffect_rec \
+    libktveq \
+    libktvns \
+    libktvreverb \
+    libktvsoundtouch \
+    libktvvolume \
+    libmnl \
+    libmp4enc_sa.ca7 \
+    libmp4enc_xa.ca7 \
+    libmsbc_mtk \
+    libmtklimiter_vendor \
+    libmtkshifter_vendor \
+    liboplus_audio_config \
+    libsi_sixth \
+    libspeech_enh_lib \
+    libspeechparser_vendor \
+    libstagefrighthw \
+    libstorage_otp \
+    libthha \
+    libtlcWidevineModularDrm \
+    libvc1dec_sa.ca7 \
+    libvcodec_oal \
+    libvcodec_utility \
+    libvcodecdrv \
+    libvolte_core_shr \
+    libvolte_xdmc_shr \
+    libvow_ap_testing_alexa.vendor \
+    libvowp23_sid_testing_alexa.vendor \
+    libvowp23_sid_training_alexa.vendor \
+    libvowp25testing_alexa.vendor \
+    libvowp2training_alexa.vendor \
+    libvp8dec_sa.ca7 \
+    libvp8enc_sa.ca7 \
+    libvp9dec_sa.ca7 \
+    libvpud_vcodec \
+    libvt_custom \
+    libwebrtc_audio_preprocessing \
+    libwvhidl \
+    libwvdrmengine \
+    libaudiopreprocessing_mtk \
+    vendor.mediatek.hardware.audio@6.1 \
+    vendor.mediatek.hardware.mtkcodecservice@1.1 \
+    libstagefright_omx.mtk \
+    APUWareUtilsServer \
+    APUWareXrpServer \
     gc02k0_mipi_raw_IdxMgr \
     gc02k0_mipi_raw_tuning \
     gc02m0_mipi_mono_IdxMgr \
@@ -895,42 +1047,29 @@ PRODUCT_PACKAGES += \
     gc2375h_mipi_raw_19661_IdxMgr \
     gc2375h_mipi_raw_19661_tuning \
     android.hardware.bluetooth@1.0-impl-mediatek \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
+    android.hardware.camera.provider@2.6-impl-mediatek \
+    android.hardware.gnss@2.1-impl-mediatek \
     android.hardware.thermal@2.0-impl \
-    audio.primary.mt6785 \
-    audio.r_submix.mt6785 \
-    audio.usb.mt6785 \
     dfps.mt6785 \
-    gps.default \
+    hwcomposer.mt6785 \
     kmsetkey.trustonic \
     libMcGatekeeper \
     libSoftGatekeeper \
-    lights.mt6785 \
-    memtrack.mt6785 \
-    power.default \
-    power.mt6785 \
-    sound_trigger.primary.mt6785 \
+    sensors.mt6785 \
     thermal.mt6785 \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
+    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
     vendor.mediatek.hardware.dfps@1.0-impl \
-    vendor.mediatek.hardware.keyinstall@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mms@1.5-impl \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
-    vendor.mediatek.hardware.mtkpower@1.1-impl \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
-    vendor.mediatek.hardware.nvram@1.1-impl \
-    vendor.mediatek.hardware.pq@2.6-impl \
-    vendor.mediatek.hardware.videotelephony@1.0-impl \
     imx471_mipi_raw1_IdxMgr \
     imx471_mipi_raw1_tuning \
     imx682_mipi_raw_IdxMgr \
     imx682_mipi_raw_tuning \
+    lbs_hidl_service-impl \
     lib3a.ae.core \
     lib3a.ae \
     lib3a.af.core \
@@ -1294,11 +1433,11 @@ PRODUCT_PACKAGES += \
     libCamera_sarterqtechmains5kgm1sp_Zoom_capture \
     libCamera_sarterqtechmains5kgm1sp_portrait_capture_full \
     libCamera_sarterqtechmains5kgm1sp_portrait_preview_full \
+    libFaceBeautyCap \
+    libFaceBeautyPre \
     libJpgEncPipe \
     libMcClient \
-    libMtkOmxCore \
-    libMtkSpeechEnh \
-    libOpenCL \
+    libPerfectlyClearCrux \
     libPolarrRender \
     libSonyIMX230PdafLibrary \
     libSonyIMX230PdafLibraryWrapper \
@@ -1309,39 +1448,35 @@ PRODUCT_PACKAGES += \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
     libTEECommon \
+    libVDBlurless \
     libVDPostureDetection \
+    libVDSuperPhotoAPI \
     libWaterMark \
     lib_bsscore \
-    lib_iir \
-    lib_speech_enh \
     libaal_cust \
     libaal_key \
     libaal_mtk \
     libaalservice \
-    libaedv \
     libakm \
+    libapusys \
     libarcsoft_distortion_correction \
     libarcsoft_dualcam_bokeh_api \
     libarcsoft_dualcam_refocus_left \
     libarcsoft_dualcam_refocus_preview \
     libarcsoft_dualcam_refocus_right \
+    libarcsoft_hdr_couple_api \
+    libarcsoft_hdr_denoise_api \
+    libarcsoft_high_dynamic_range \
+    libarcsoft_high_dynamic_range_couple \
     libarcsoft_lensstaindetection \
+    libarcsoft_low_light_hdr \
+    libarcsoft_relighting_pro_image \
+    libarcsoft_scbokeh_image \
+    libarcsoft_smart_denoise \
+    libarcsoft_supervideostabilization \
+    libarcsoft_videostabilizer \
+    libarmnn \
     libarmnn_ndk.mtk \
-    libaudio_engineer_test \
-    libaudio_param_parser-vnd \
-    libaudiocompensationfilter_vendor \
-    libaudiocompensationfilterc \
-    libaudiocomponentengine_vendor \
-    libaudiocomponentenginec \
-    libaudiocustparam_vendor \
-    libaudiodcrflt_vendor \
-    libaudiofmtconv \
-    libaudioloudc \
-    libaudioprimarydevicehalifclient \
-    libaudiotoolkit_vendor \
-    libaurisysdemo \
-    libbessound_hd_mtk_vendor \
-    libblisrc32_vendor \
     libbluetooth_audio_session_mediatek \
     libbluetooth_hw_test \
     libbluetooth_mtk \
@@ -1349,15 +1484,18 @@ PRODUCT_PACKAGES += \
     libbluetooth_relayer \
     libbluetoothem_mtk \
     libbt-vendor \
-    libbwc \
     libcam.feature_utils \
+    libcam.hal3a.cctsvr \
     libcam.hal3a.log \
+    libcam.hal3a.v3.dng \
     libcam.hal3a.v3.lscMgr \
     libcam.hal3a.v3.lsctbl.50 \
     libcam.hal3a.v3.nvram.50 \
     libcam.hal3a.v3 \
+    libcam.halisp \
     libcam.halsensor \
     libcam.iopipe \
+    libcam.lcs \
     libcam.pdtblgen \
     libcam.utils.sensorprovider \
     libcam.vhdr \
@@ -1386,24 +1524,13 @@ PRODUCT_PACKAGES += \
     libcamera_core_hwi \
     libcameracustom.eis \
     libcameracustom \
-    libcapctrl \
-    libcares_naptr \
-    libcarrierconfig \
-    libccci_util \
-    libcharon-ss \
     libchromanr \
+    libcmdl \
     libcmdl_ndk.mtk \
-    libcrypto-md \
-    libcrypto-ss \
-    libcurl-md \
-    libcurl-ss \
-    libcustom_nvram \
     libcvface_api \
-    libcvsd_mtk \
     libdip_drv \
     libdip_imem \
     libdip_postproc \
-    libdpframework \
     libeffecthal.base \
     libfeature.face \
     libfeature.stereo.provider \
@@ -1414,43 +1541,24 @@ PRODUCT_PACKAGES += \
     libfeature_lmv \
     libfeature_rss \
     libfeatureiodrv_mem \
-    libfile_op \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
+    libforkexecwrap \
     libgz_uree \
-    libhdrvideo \
-    libhevce_sb.ca7.android \
-    libhwm \
-    libhydra \
+    libhwm-oppo \
+    libifcutils_mtk \
     libimageio \
     libimageio_plat_drv \
     libimageio_plat_pipe \
-    libion_mtk \
-    libion_ulit \
-    libipsec_ims_shr \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
-    libktvdrc \
-    libktveffect \
-    libktveffect_rec \
-    libktveq \
-    libktvns \
-    libktvreverb \
-    libktvsoundtouch \
-    libktvvolume \
-    libladder \
+    libkmsetkey \
+    libksensor \
     liblpcnr \
-    libmedia_helper-v30 \
     libmfllcore \
-    libmsbc_mtk \
+    libml_util \
+    libmpbase \
     libmsnr \
     libmtcloader \
-    libmtk_drvb \
-    libmtkares \
+    libmtk-ril \
     libmtkcam.atmseventmgr \
     libmtkcam.eventcallback \
     libmtkcam.featurepipe.capture \
@@ -1465,9 +1573,19 @@ PRODUCT_PACKAGES += \
     libmtkcam_calibration_convertor \
     libmtkcam_calibration_provider \
     libmtkcam_debugutils \
+    libmtkcam_device3_app \
+    libmtkcam_device3_hal \
+    libmtkcam_device3_hidl \
+    libmtkcam_device3_hidlutils \
+    libmtkcam_device3_utils \
+    libmtkcam_devicesessionpolicy \
+    libmtkcam_diputils \
     libmtkcam_dpe \
     libmtkcam_exif \
     libmtkcam_fdvt \
+    libmtkcam_featurepolicy \
+    libmtkcam_featureutils \
+    libmtkcam_fwkutils \
     libmtkcam_grallocutils \
     libmtkcam_hwnode \
     libmtkcam_hwutils \
@@ -1476,11 +1594,25 @@ PRODUCT_PACKAGES += \
     libmtkcam_metadata \
     libmtkcam_metastore \
     libmtkcam_mfb \
+    libmtkcam_modulefactory_aaa \
+    libmtkcam_modulefactory_custom \
+    libmtkcam_modulefactory_drv \
+    libmtkcam_modulefactory_utils \
     libmtkcam_modulehelper \
     libmtkcam_owe \
     libmtkcam_pipeline \
     libmtkcam_pipeline_fbm \
+    libmtkcam_pipelinemodel \
+    libmtkcam_pipelinemodel_adapter \
+    libmtkcam_pipelinemodel_capture \
     libmtkcam_pipelinemodel_isp \
+    libmtkcam_pipelinemodel_session \
+    libmtkcam_pipelinemodel_utils \
+    libmtkcam_pipelinemodel_zsl \
+    libmtkcam_pipelinepolicy-security \
+    libmtkcam_pipelinepolicy-smvr \
+    libmtkcam_pipelinepolicy \
+    libmtkcam_pipelinepolicy_factory \
     libmtkcam_prerelease \
     libmtkcam_rsc \
     libmtkcam_scenariorecorder \
@@ -1490,73 +1622,40 @@ PRODUCT_PACKAGES += \
     libmtkcam_sysutils \
     libmtkcam_tuning_utils \
     libmtkcam_ulog \
-    libmtkcutils \
-    libmtkhardware_legacy \
+    libmtkconfig \
+    libmtkconfigutils \
     libmtkisp_metadata \
-    libmtklimiter_vendor \
-    libmtknetutils \
-    libmtkperf_client_vendor \
-    libmtkproperty \
-    libmtkrillog \
-    libmtkshifter_vendor \
-    libmtksysutils \
+    libmtkrilutils \
+    libmtktinyxml \
+    libmtkutils \
     libneuroeara \
+    libneuron_adapter \
+    libneuron_platform \
+    libneuron_runtime \
     libneuropilot_hal_utils \
     libneuropilot_jni_R \
     libnir_neon_driver \
     libnir_neon_driver_ndk.mtk \
-    libnvram \
-    libnvram_daemon_callback \
-    libnvram_platform \
-    libnvram_sec \
     libnxprecord \
     libnxpspeech \
     libocam_common \
-    liboplus_audio_config \
+    liboppo_aisd \
     liboppo_arcSoftBokehEngine_new \
+    liboppo_blank_algo \
     liboppo_platform_hwi \
-    libperfctl_vendor \
-    libpixelflinger \
-    libpower_timer \
-    libpowerhal \
-    libpowerhalwrap_vendor \
-    libpq_cust_base \
-    libpq_prot \
-    librgbwlightsensor \
-    libscltm \
-    libsi_sixth \
-    libsimaka \
-    libspeech_enh_lib \
-    libspeechparser_vendor \
-    libssl-md \
-    libssl-ss \
-    libstagefrighthw \
+    libratconfig \
+    librilfusion \
+    libsensor_custom \
     libstereoinfoaccessor_vsdof \
     libstface_fd_api \
-    libstrongswan \
-    libsysenv \
     libtflite_mtk \
     libtflite_mtk_static_R \
-    libthha \
-    libtlcWidevineModularDrm \
     libudf \
-    libunwindstack-v30 \
-    liburee_meta_drmkeyinstall \
-    libutils-v30 \
-    libvcodec_oal \
-    libverno \
-    libvow_ap_testing_alexa.vendor \
-    libvowp23_sid_testing_alexa.vendor \
-    libvowp23_sid_training_alexa.vendor \
-    libvowp25testing_alexa.vendor \
-    libvowp2training_alexa.vendor \
-    libvpu \
     libwapi \
-    libwebrtc_audio_preprocessing \
-    libwo \
+    libwifi-hal-mtk \
+    libwifitest \
     libwpa_client \
-    libwvhidl \
-    libwvdrmengine \
+    libmtkcam_streaminfo_plugin-p1stt \
     ov02b10_mipi_raw_IdxMgr \
     ov02b10_mipi_raw_tuning \
     ov02b1b_mipi_mono_IdxMgr \
@@ -1575,170 +1674,31 @@ PRODUCT_PACKAGES += \
     salaa_qtech_main_s5kgm1sp_tuning \
     sarter_qtech_main_s5kgm1sp_IdxMgr \
     sarter_qtech_main_s5kgm1sp_tuning \
-    libaudiopreprocessing_mtk \
-    vendor.mediatek.hardware.audio@6.1 \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.atci@1.0 \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
     vendor.mediatek.hardware.camera.camdump@1.0 \
-    vendor.mediatek.hardware.camera.isphal@1.0 \
-    vendor.mediatek.hardware.camera.postproc@1.0 \
-    vendor.mediatek.hardware.dfps@1.0 \
-    vendor.mediatek.hardware.gpu@1.0 \
-    vendor.mediatek.hardware.keyinstall@1.0 \
-    vendor.mediatek.hardware.keymaster_attestation@1.0 \
-    vendor.mediatek.hardware.keymaster_attestation@1.1 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mms@1.4 \
-    vendor.mediatek.hardware.mms@1.5 \
-    vendor.mediatek.hardware.mtkcodecservice@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
-    vendor.mediatek.hardware.netdagent@1.0 \
-    vendor.mediatek.hardware.nvram@1.0 \
-    vendor.mediatek.hardware.nvram@1.1 \
-    vendor.mediatek.hardware.power@1.1 \
-    vendor.mediatek.hardware.power@2.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    libDR \
-    libHEVCdec_sa.ca7.android \
-    libMtkOmxAdpcmDec \
-    libMtkOmxAlacDec \
-    libMtkOmxApeDec \
-    libMtkOmxGsmDec \
-    libMtkOmxMp3Dec \
-    libMtkOmxVdecEx \
-    libMtkOmxVenc \
-    libMtkOmxWmaDec \
-    libfgauge_gm30 \
-    libh264dec_customize \
-    libh264dec_sa.ca7 \
-    libh264dec_sd.ca7 \
-    libh264dec_se.ca7 \
-    libh264enc_sa.ca7 \
-    libmnl \
-    libmp4enc_sa.ca7 \
-    libmp4enc_xa.ca7 \
-    libstorage_otp \
-    libthermalalgo \
-    libvc1dec_sa.ca7 \
-    libvcodec_utility \
-    libvcodecdrv \
-    libvolte_core_shr \
-    libvolte_xdmc_shr \
-    libvp8dec_sa.ca7 \
-    libvp8enc_sa.ca7 \
-    libvp9dec_sa.ca7 \
-    libvpud_vcodec \
-    libvt_custom \
-    libstagefright_omx.mtk \
-    APUWareUtilsServer \
-    APUWareXrpServer \
-    android.hardware.power-service-mediatek \
-    android.hardware.camera.provider@2.6-impl-mediatek \
-    android.hardware.gnss@2.1-impl-mediatek \
-    hwcomposer.mt6785 \
-    sensors.mt6785 \
-    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
-    lbs_hidl_service-impl \
-    libFaceBeautyCap \
-    libFaceBeautyPre \
-    libPerfectlyClearCrux \
-    libVDBlurless \
-    libVDSuperPhotoAPI \
-    libapusys \
-    libarcsoft_hdr_couple_api \
-    libarcsoft_hdr_denoise_api \
-    libarcsoft_high_dynamic_range \
-    libarcsoft_high_dynamic_range_couple \
-    libarcsoft_low_light_hdr \
-    libarcsoft_relighting_pro_image \
-    libarcsoft_scbokeh_image \
-    libarcsoft_smart_denoise \
-    libarcsoft_supervideostabilization \
-    libarcsoft_videostabilizer \
-    libarmnn \
-    libcam.hal3a.cctsvr \
-    libcam.hal3a.v3.dng \
-    libcam.halisp \
-    libcam.lcs \
-    libcmdl \
-    libforkexecwrap \
-    libhwm-oppo \
-    libifcutils_mtk \
-    libkmsetkey \
-    libksensor \
-    libml_util \
-    libmtk-ril \
-    libmtkcam_device3_app \
-    libmtkcam_device3_hal \
-    libmtkcam_device3_hidl \
-    libmtkcam_device3_hidlutils \
-    libmtkcam_device3_utils \
-    libmtkcam_devicesessionpolicy \
-    libmtkcam_diputils \
-    libmtkcam_featurepolicy \
-    libmtkcam_featureutils \
-    libmtkcam_fwkutils \
-    libmtkcam_modulefactory_aaa \
-    libmtkcam_modulefactory_custom \
-    libmtkcam_modulefactory_drv \
-    libmtkcam_modulefactory_utils \
-    libmtkcam_pipelinemodel \
-    libmtkcam_pipelinemodel_adapter \
-    libmtkcam_pipelinemodel_capture \
-    libmtkcam_pipelinemodel_session \
-    libmtkcam_pipelinemodel_utils \
-    libmtkcam_pipelinemodel_zsl \
-    libmtkcam_pipelinepolicy-security \
-    libmtkcam_pipelinepolicy-smvr \
-    libmtkcam_pipelinepolicy \
-    libmtkcam_pipelinepolicy_factory \
-    libmtkconfig \
-    libmtkconfigutils \
-    libmtkrilutils \
-    libmtktinyxml \
-    libmtkutils \
-    libneuron_adapter \
-    libneuron_platform \
-    libneuron_runtime \
-    liboppo_aisd \
-    liboppo_blank_algo \
-    libratconfig \
-    librilfusion \
-    libsensor_custom \
-    libwifi-hal-mtk \
-    libwifitest \
-    libmtkcam_streaminfo_plugin-p1stt \
-    vendor.mediatek.hardware.apuware.utils@1.0 \
-    vendor.mediatek.hardware.apuware.xrp@1.0 \
-    vendor.mediatek.hardware.atci@1.0 \
     vendor.mediatek.hardware.camera.frhandler@1.0 \
+    vendor.mediatek.hardware.camera.isphal@1.0 \
     vendor.mediatek.hardware.camera.lomoeffect@1.0 \
+    vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
+    vendor.mediatek.hardware.dfps@1.0 \
     vendor.mediatek.hardware.dplanner@2.0 \
     vendor.mediatek.hardware.engineermode@1.0 \
     vendor.mediatek.hardware.engineermode@1.1 \
     vendor.mediatek.hardware.engineermode@1.2 \
     vendor.mediatek.hardware.engineermode@1.3 \
+    vendor.mediatek.hardware.keymaster_attestation@1.0 \
+    vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.pplagent@1.0 \
-    vendor.mediatek.hardware.wifi.hostapd@2.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.1 \
     vendor.mediatek.hardware.wifi.supplicant@2.2 \
@@ -1747,15 +1707,9 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
-    vendor.oplus.hardware.camera.slogan@1.0-impl \
-    liboemcrypto \
     libormshalclient \
     libpnscr2 \
-    sensors.virtual \
     vendor.oplus.hardware.appradio@1.0 \
-    vendor.oplus.hardware.biometrics.fingerprint@2.1.odm \
-    vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
-    vendor.oplus.hardware.camera.slogan@1.0 \
     vendor.oplus.hardware.commondcs@1.0 \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.radio@1.0 \
@@ -1765,11 +1719,17 @@ PRODUCT_PACKAGES += \
     libdav1d.so \
     libffmpeg_omx \
     libffmpeg_utils \
+    liboemcrypto \
     libpn553_fw \
     libpn557_fw \
     libsn100u_fw \
     libswresample \
     libswscale \
+    vendor.oplus.hardware.camera.slogan@1.0-impl \
+    sensors.virtual \
+    vendor.oplus.hardware.biometrics.fingerprint@2.1.odm \
+    vendor.oplus.hardware.biometrics.fingerprintservice@1.0 \
+    vendor.oplus.hardware.camera.slogan@1.0 \
     EngineerMode \
     ImsService \
     HotwordEnrollmentOKGoogleCORTEXM4 \
@@ -1785,16 +1745,11 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     android.hardware.gpu@1.0-service \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
-    android.hardware.wifi.hostapd \
     manifest \
     manifest_android.hardware.drm@1.3-service.widevine \
     oplus_appradio_device_manifest \
     oplus_radio_device_manifest \
-    power-mtk-default \
     vendor.mediatek.hardware.dplanner@2.0-service \
-    vibrator-mtk-default \
-    ueventd.mtk.rc \
-    chargeonlymode \
     vtservice \
     atcid \
     audiocmdservice_atci \
@@ -1815,7 +1770,6 @@ PRODUCT_PACKAGES += \
     fuelgauged \
     fuelgauged_nvram \
     gsm0710muxd \
-    hostapd_cli \
     android.hardware.bluetooth@1.0-service-mediatek \
     android.hardware.drm@1.3-service.widevine \
     android.hardware.gnss@2.1-service-mediatek \
@@ -1827,7 +1781,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.1-service-mediatek \
     camerahalserver \
-    hostapd \
     mtkfusionrild \
     vendor.mediatek.hardware.dfps@1.0-service \
     vendor.mediatek.hardware.dplanner@2.0-service \
@@ -1845,23 +1798,6 @@ PRODUCT_PACKAGES += \
     ipsec_mon \
     jpegtool \
     lbs_hidl_service \
-    lib3a.ccu.ddr \
-    lib3a.ccu.dm \
-    lib3a.ccu.pm \
-    libccu_gc02k0_mipi_raw.ddr \
-    libccu_gc02m0_mipi_mono.ddr \
-    libccu_gc2375h_mipi_raw_19661.ddr \
-    libccu_imx471_mipi_raw1.ddr \
-    libccu_imx682_mipi_raw.ddr \
-    libccu_ov02b10_mipi_raw.ddr \
-    libccu_ov02b1b_mipi_mono.ddr \
-    libccu_ov8856_mipi_raw.ddr \
-    libccu_s5k3p9sp_mipi_raw.ddr \
-    libccu_s5kgm1sp_mipi_raw.ddr \
-    libccu_s5kgw1_mipi_raw.ddr \
-    libccu_sala_wide_ov8856.ddr \
-    libccu_salaa_qtech_main_s5kgm1sp.ddr \
-    libccu_sarter_qtech_main_s5kgm1sp.ddr \
     mcDriverDaemon \
     md_monitor \
     md_monitor_ctrl \
