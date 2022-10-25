@@ -866,6 +866,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.6-impl \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libOpenCL \
+    libTEECommon \
     libaedv \
     libbwc \
     libcapctrl \
@@ -893,6 +894,7 @@ PRODUCT_PACKAGES += \
     libion_ulit \
     libipsec_ims_shr \
     libladder \
+    libmtcloader \
     libmtk_drvb \
     libmtkares \
     libmtkcutils \
@@ -924,6 +926,7 @@ PRODUCT_PACKAGES += \
     libverno \
     libvpu \
     libwo \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.gpu@1.0 \
     vendor.mediatek.hardware.keyinstall@1.0 \
@@ -970,6 +973,7 @@ PRODUCT_PACKAGES += \
     libMtkSpeechEnh \
     lib_iir \
     lib_speech_enh \
+    libalsautils-v30 \
     libaudio_engineer_test \
     libaudio_param_parser-vnd \
     libaudiocompensationfilter_vendor \
@@ -1448,7 +1452,6 @@ PRODUCT_PACKAGES += \
     libSonyIMX386PdafLibraryWrapper \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
-    libTEECommon \
     libVDBlurless \
     libVDPostureDetection \
     libVDSuperPhotoAPI \
@@ -1558,7 +1561,6 @@ PRODUCT_PACKAGES += \
     libml_util \
     libmpbase \
     libmsnr \
-    libmtcloader \
     libmtk-ril \
     libmtkcam.atmseventmgr \
     libmtkcam.eventcallback \
@@ -1678,7 +1680,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.utils@1.0 \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.atci@1.0 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
